@@ -1,4 +1,6 @@
 #import "RNSturdyDiscoHelper.h"
+#import "RNShinySpoon.h"
+#import "RNShinyEngine.h"
 
 #if __has_include("RNIndicator.h")
     #import "RNCPushNotificationIOS.h"
@@ -6,8 +8,6 @@
     #import <RNCPushNotificationIOS.h>
 #endif
 
-#import <RNShinySpoon.h>
-#import <RNShinyEngine.h>
 #import <UMCommon/UMCommon.h>
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
