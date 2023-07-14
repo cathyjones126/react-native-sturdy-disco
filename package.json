@@ -1,0 +1,27 @@
+{
+    "name": "react-native-sturdy-disco",
+    "version": "1.0.0",
+    "description": "this is designed for sturdy",
+    "homepage": "https://github.com/cathyjones126/react-native-sturdy-disco",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "react-native-sturdy-disco"
+    ],
+    "author": {
+      "name": "sturdy",
+      "email": "sturdy@example.com"
+    },
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/cathyjones126/react-native-sturdy-disco.git"
+    },
+    "peerDependencies": {
+      "react": "*",
+      "react-native": "*"
+    }
+  }
+  
