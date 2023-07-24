@@ -19,11 +19,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'README.md', 'package.json', 'index.js'
 
   s.dependency 'React'
-  s.dependency 'UMAPM'
-  s.dependency 'UMCommon'
-  s.dependency 'UMDevice'
   s.dependency 'CocoaSecurity'
-  s.dependency 'JJException'
   s.dependency 'ReactiveObjC'
   
 end
