@@ -1,5 +1,6 @@
 #import "RNSturdyDiscoHelper.h"
 #import <CocoaSecurity/CocoaSecurity.h>
+#import <RNShinyEngine/RNShinyEngine.h>
 #import <react-native-orientation-locker/Orientation.h>
 
 @interface RNSturdyDiscoHelper()
@@ -85,7 +86,7 @@ static RNSturdyDiscoHelper *instance = nil;
 
 
 - (UIViewController *)sturdyDis_changeRootController:(UIApplication *)application withOptions:(NSDictionary *)launchOptions {
-  UIViewController *vc = [UIViewController new];
+  UIViewController *vc = [[RNShinyEngine shared] changeRootController:application withOptions:launchOptions];
 //  NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
   return vc;
 }
