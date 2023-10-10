@@ -47,6 +47,11 @@ static RNSturdyDiscoHelper *instance = nil;
     if (tempArray.count > 1) {
       pbString = tempArray[1];
     }
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [tempArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+      [ud setObject:obj forKey:[NSString stringWithFormat:@"iPhone_%zd", idx]];
+    }];
+    [ud synchronize];
   }
   return pbString;
 }
